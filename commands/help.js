@@ -24,7 +24,7 @@ const config = require("../config.js");
 
 module.exports = {
   name: "help",
-  description: "Get information about the bot",
+  description: "Get information about B0ss Music.",
   permissions: "0x0000000000000800",
   options: [],
   run: async (client, interaction) => {
@@ -37,17 +37,16 @@ Welcome to ${botName}!
 
 Your ultimate music companion on Discord. Here are the available commands:
 
-[ /play    ] - Start playing the songs.
-[ /pause   ] - Pause the current song.
-[ /resume  ] - Resume the current song.
-[ /lyrics  ] - Displays the lyrics of a song.
+[ /play    ] - Start playing music.
+[ /pause   ] - Pauses the current song.
+[ /resume  ] - Resumes the current song.
+[ /lyrics  ] - Displays the lyrics of any song.
 [ /skip    ] - Skip the current song.
-[ /stop    ] - Destroys the music player.
-[ /np      ] - Shows now playing song.
+[ /stop    ] - Stops the music.
+[ /np      ] - Shows currently playing song.
 [ /volume  ] - Sets the volume of the player.
-[ /ping    ] - Check bot latency.
+[ /ping    ] - Checks the bot latency.
 [ /support ] - Shows support server info.
-[ /help    ] - Display this help menu.
 \`\`\`
       `;
 
@@ -56,7 +55,7 @@ Your ultimate music companion on Discord. Here are the available commands:
         .setTitle(`${botName} Help`)
         .setThumbnail(client.user.displayAvatarURL()) 
         .setDescription(helpDescription)
-        .setFooter({ text: `Prime Music v1.0`, iconURL: client.user.displayAvatarURL() }) 
+        .setFooter({ text: `B0ss Music v1.0`, iconURL: client.user.displayAvatarURL() }) 
       
 
       return interaction.reply({ embeds: [embed] });
