@@ -41,9 +41,9 @@ module.exports = {
   nodes: [
     {
         name: "Node #1",
-        host: "lava2.horizxon.studio",
-        port: 80,
-        password: "horizxon.studio",
+        host: "37.114.42.191",
+        port: 9906,
+        password: "danteisnttaken",
         reconnectTimeout: 5000,
         reconnectTries: Infinity,
         secure: false
