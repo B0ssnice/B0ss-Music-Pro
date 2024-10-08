@@ -41,9 +41,9 @@ module.exports = {
   nodes: [
     {
         name: "Node #1",
-        host: "37.114.42.191",
-        port: 9906,
-        password: "danteisnttaken",
+        host: "lavalinkv3-id.serenetia.com",
+        port: 80,
+        password: "BatuManaBisa",
         reconnectTimeout: 5000,
         reconnectTries: Infinity,
         secure: false
